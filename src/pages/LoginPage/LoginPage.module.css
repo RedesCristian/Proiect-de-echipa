@@ -1,0 +1,31 @@
+.loginPage {
+  min-width: 90dvw;
+  min-height: 100dvh;
+
+  background-image: url('../../images/backgrounds/register&login-bg-m.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 23px 20px;
+
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .loginPage {
+    background-image: url('../../images/backgrounds/login-bg-t.jpg');
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .loginPage {
+    background-image: url('../../images/backgrounds/login-bg-d.jpg');
+  }
+}

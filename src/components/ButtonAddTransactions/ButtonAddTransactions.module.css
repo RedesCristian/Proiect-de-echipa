@@ -1,0 +1,37 @@
+.ButtonOpenModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  border: none;
+  color: #fbfbfb;
+  cursor: pointer;
+
+  background: linear-gradient(95deg, #ffc727 -15%, #9e40ba 95%, #7000ff 150%);
+  transition: all 0.5s ease 0s;
+}
+
+.ButtonOpenModal:hover {
+  transform: scale(1.2);
+  background: linear-gradient(95deg, #7000ff -15%, #9e40ba 95%, #ffc727 150%);
+  transition: all 0.5s ease 0s;
+}
+
+.ButtonOpenModal svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ButtonOpenModal {
+    bottom: 40px;
+    right: 40px;
+  }
+}
