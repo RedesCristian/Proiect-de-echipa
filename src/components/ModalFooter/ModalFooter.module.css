@@ -36,7 +36,6 @@
   min-height: 100%;
 }
 
-
 .modalContent h2 {
   color: #ffffff;
   font-size: 20px;
@@ -49,11 +48,6 @@
   margin-top: -15px;
   animation-delay: 6.5s;
 }
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
   .modalFooter {
@@ -76,5 +70,22 @@
     padding: 35px 70px;
     margin: auto 0;
   }
+}
 
+.teamList {
+  list-style-type: none; /* Elimină bulinele */
+  padding: 0; /* Elimină spațiul de la începutul listei */
+}
+
+.teamList li {
+  margin-bottom: 10px; /* Spațiu între elemente */
+}
+
+.teamList a {
+  color: white; /* Schimbă culoarea textului în alb */
+  text-decoration: none; /* Elimină sublinierea */
+}
+
+.teamList a:hover {
+  text-decoration: underline; /* Adaugă sublinierea la hover, dacă dorești acest efect */
 }

@@ -41,8 +41,7 @@ const LoginForm = () => {
       })
     )
       .unwrap()
-      .then(() => {
-      })
+      .then(() => {})
       .catch(error => {
         setStatus({ success: false, error: error });
         setSubmitting(false);

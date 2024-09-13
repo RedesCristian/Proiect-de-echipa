@@ -3,14 +3,17 @@ import styles from './Navigation.module.css';
 import icons from '../../images/icons/sprite.svg';
 
 const Navigation = () => {
+  const getClassName = (isActive, additionalClass) =>
+    isActive
+      ? `${styles.navLink} ${styles.active}`
+      : `${styles.navLink} ${additionalClass}`;
+
   return (
     <div className={styles.navigation}>
       <NavLink
         to="/dashboard"
         end
-        className={({ isActive }) =>
-          isActive ? `${styles.navLink} ${styles.active}` : `${styles.navLink}`
-        }
+        className={({ isActive }) => getClassName(isActive, '')}
       >
         <div className={styles.linkIcon}>
           <svg className={styles.homeIcon}>
@@ -22,9 +25,7 @@ const Navigation = () => {
 
       <NavLink
         to="/dashboard/statistics"
-        className={({ isActive }) =>
-          isActive ? `${styles.navLink} ${styles.active}` : `${styles.navLink} `
-        }
+        className={({ isActive }) => getClassName(isActive, '')}
       >
         <div className={styles.linkIcon}>
           <svg className={styles.statisticsIcon}>
@@ -37,9 +38,7 @@ const Navigation = () => {
       <NavLink
         to="currency"
         className={({ isActive }) =>
-          isActive
-            ? `${styles.navLink} ${styles.active}`
-            : `${styles.navLink} ${styles.currencyLink}`
+          getClassName(isActive, styles.currencyLink)
         }
       >
         <div className={styles.linkIcon}>
